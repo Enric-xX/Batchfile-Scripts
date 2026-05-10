@@ -3,7 +3,7 @@ title CoreOptimizer v1.0 - CoreDev-HUB
 color 0b
 
 echo ==========================================
-echo       COREDEV-HUB | SYSTEM OPTIMIZER
+echo           SYSTEM OPTIMIZER
 echo ==========================================
 echo.
 
@@ -19,7 +19,7 @@ netsh int tcp set global autotuninglevel=normal >nul
 
 echo.
 echo ==========================================
-echo    SISTEMA OPTIMIZADO
+echo           SISTEMA OPTIMIZADO
 echo ==========================================
 echo.
 pause
