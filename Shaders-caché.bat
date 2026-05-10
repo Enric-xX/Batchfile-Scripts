@@ -1,5 +1,5 @@
 @echo off
-title CoreOptimizer v1.0 - CoreDev-HUB
+title CoreOptimizer v1.0 
 color 0b
 
 echo ==========================================
