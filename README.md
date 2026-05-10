@@ -4,6 +4,14 @@
 
 ---
 
+## ⚠️ False Positive Warning
+Debido a que estos scripts modifican registros del sistema (`reg add`), servicios de red y planes de energía para maximizar el rendimiento, **es posible que algunos antivirus o Windows Defender los marquen como sospechosos.**
+
+* **Falsos Positivos:** Son alertas preventivas. Puedes revisar el código fuente de cada `.bat` para verificar que no hay comandos maliciosos. 
+* **Permisos:** Se requiere ejecutar como **Administrador** para que los cambios se apliquen correctamente.
+
+---
+
 ## 📂 Scripts Incluidos y Funciones
 
 | Archivo | Descripción |
@@ -21,27 +29,22 @@
 
 ## ⚙️ Requisitos y Uso
 
-1. **Privilegios:** La mayoría de estos scripts realizan cambios en el Registro de Windows o servicios de red, por lo que **deben ejecutarse como Administrador**.
-2. **Uso:** - Descarga el script que necesites.
-   - Haz clic derecho -> **Ejecutar como administrador**.
-   - Sigue las instrucciones en la consola (usualmente pulsar una tecla para terminar).
-
----
-
-## 🛠️ Stack Tecnológico
-* **Lenguaje:** Windows Batch (CMD)
-* **Optimización:** Registry Tweaks, Network Shell (Netsh), Powercfg.
-* **Compatibilidad:** Windows 10 y Windows 11.
+1. **Descarga:** Elige el script que necesites del repositorio.
+2. **Ejecución:** Haz clic derecho -> **Ejecutar como administrador**.
+3. **Finalización:** Sigue las instrucciones en la consola (usualmente pulsar una tecla para cerrar).
 
 ---
 
 ## 📜 Ejemplo de Código (Core Logic)
-Todos los scripts siguen una estructura minimalista para garantizar el **zero-overhead**:
+Todos los scripts del **CoreDev-HUB** siguen una estructura minimalista para garantizar el **zero-overhead**:
 
 ```batch
 @echo off
-title ScriptName - CoreDev-HUB
+title ScriptName
 color 0b
+
 :: [Lógica de optimización del script]
+:: Comandos directos de Windows (Reg, Netsh, Powercfg)
+
 pause
 exit
